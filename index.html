@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>United for Charitable Assistance — Notes & Public Resources</title>
+  <meta name="description" content="United for Charitable Assistance menyajikan catatan singkat, panduan publik, dan referensi umum seputar kegiatan sosial dan bantuan komunitas." />
+  <link rel="canonical" href="https://unitedforcharitableassistance.org/" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg: #070914;
+      --card: rgba(255,255,255,.06);
+      --line: rgba(255,255,255,.12);
+      --text: rgba(255,255,255,.92);
+      --muted: rgba(255,255,255,.72);
+      --a1: #16a34a;   /* green */
+      --a2: #22c55e;
+      --shadow: 0 18px 50px rgba(0,0,0,.35);
+      --r: 18px;
+    }
+    *{ box-sizing:border-box; }
+    body{
+      margin:0;
+      font-family:"Plus Jakarta Sans", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(900px 500px at 12% -10%, rgba(34,197,94,.22), transparent 60%),
+        radial-gradient(900px 500px at 90% 0%, rgba(22,163,74,.18), transparent 58%),
+        var(--bg);
+    }
+    a{ color:inherit; }
+    .container{ max-width:980px; margin:0 auto; padding:0 18px; }
+
+    /* Topbar */
+    .topbar{
+      position:sticky; top:0; z-index:50;
+      background: rgba(7,9,20,.6);
+      border-bottom:1px solid rgba(255,255,255,.10);
+      backdrop-filter: blur(10px);
+    }
+    .topbar-inner{
+      display:flex; justify-content:space-between; align-items:center;
+      padding:12px 0; gap:12px;
+    }
+    .badge{
+      display:inline-flex; align-items:center; gap:10px;
+      font-weight:900; font-size:12px; letter-spacing:.3px;
+      padding:8px 12px; border-radius:999px;
+      border:1px solid rgba(255,255,255,.14);
+      background: rgba(0,0,0,.18);
+    }
+    .badge-dot{
+      width:10px;height:10px;border-radius:999px;
+      background: linear-gradient(135deg,var(--a1),var(--a2));
+      box-shadow:0 8px 18px rgba(34,197,94,.25);
+    }
+    .nav{ display:flex; gap:10px; flex-wrap:wrap; }
+    .nav a{
+      text-decoration:none; font-weight:900; font-size:12px;
+      padding:8px 10px; border-radius:999px;
+      border:1px solid rgba(255,255,255,.14);
+      color:var(--muted); background: rgba(0,0,0,.16);
+    }
+    .nav a:hover{ color:var(--text); }
+
+    /* Header */
+    .site-header{ padding:42px 0 18px; }
+    .brand{ display:flex; gap:12px; align-items:flex-end; flex-wrap:wrap; }
+    .logo{
+      width:44px;height:44px;border-radius:16px;
+      background: linear-gradient(135deg,var(--a1),var(--a2));
+      box-shadow:0 16px 40px rgba(34,197,94,.25);
+    }
+    h1{
+      font-family:"Space Grotesk", system-ui, sans-serif;
+      margin:0; font-size:clamp(28px,3.2vw,46px);
+      line-height:1.05;
+    }
+    .subtitle{
+      margin-top:10px; color:var(--muted);
+      font-size:14px; line-height:1.7; max-width:70ch;
+    }
+
+    /* Card */
+    .card{
+      background: linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.04));
+      border:1px solid rgba(255,255,255,.12);
+      border-radius:var(--r);
+      box-shadow:var(--shadow);
+      backdrop-filter: blur(10px);
+    }
+    .section{ padding:18px; }
+    @media(min-width:768px){ .section{ padding:24px; } }
+
+    h2{
+      font-family:"Space Grotesk", system-ui, sans-serif;
+      margin:0 0 10px;
+      font-size:clamp(18px,2.2vw,28px);
+    }
+    p{
+      margin:0 0 12px; color:var(--muted);
+      line-height:1.75; font-size:14.5px;
+    }
+
+    blockquote{
+      margin:14px 0; padding:12px 14px;
+      border-left:5px solid var(--a1);
+      background: rgba(0,0,0,.18);
+      border-radius:14px; font-weight:900;
+      color:rgba(255,255,255,.9);
+    }
+
+    .grid{
+      display:grid; grid-template-columns:1fr; gap:12px;
+    }
+    @media(min-width:900px){ .grid{ grid-template-columns:1fr 1fr; } }
+
+    .hr{
+      height:1px; background:rgba(255,255,255,.10);
+      border:0; margin:18px 0;
+    }
+
+    footer{
+      margin-top:22px; padding:18px 0 26px;
+      text-align:center; font-size:12px;
+      color:rgba(255,255,255,.55);
+      border-top:1px solid rgba(255,255,255,.10);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="topbar">
+    <div class="container">
+      <div class="topbar-inner">
+        <div class="badge"><span class="badge-dot"></span> COMMUNITY • NOTES</div>
+        <nav class="nav">
+          <a href="#artikel">Artikel</a>
+          <a href="#referensi">Referensi</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">
+        <div class="logo"></div>
+        <h1>United for Charitable Assistance</h1>
+      </div>
+      <p class="subtitle">
+        Catatan singkat dan panduan umum seputar kegiatan sosial, bantuan komunitas,
+        serta cara menyusun program yang transparan dan mudah dipahami.
+      </p>
+    </div>
+  </header>
+
+  <main class="container" style="padding-bottom:26px">
+
+    <section id="artikel" class="card section">
+      <h2>Catatan Dasar tentang Program Bantuan Komunitas</h2>
+
+      <div class="grid">
+        <div class="card section" style="box-shadow:none">
+          <h2 style="font-size:18px;margin-bottom:8px">1) Mulai dari Kebutuhan Nyata</h2>
+          <p>Program yang efektif selalu berangkat dari kebutuhan riil di lapangan. Dengarkan warga dan rangkum prioritas secara sederhana.</p>
+        </div>
+        <div class="card section" style="box-shadow:none">
+          <h2 style="font-size:18px;margin-bottom:8px">2) Transparansi Itu Kunci</h2>
+          <p>Catat tujuan, alur bantuan, dan hasilnya. Dokumentasi singkat tapi konsisten membantu membangun kepercayaan.</p>
+        </div>
+      </div>
+
+      <div class="grid" style="margin-top:12px">
+        <div class="card section" style="box-shadow:none">
+          <h2 style="font-size:18px;margin-bottom:8px">3) Kolaborasi Lebih Kuat</h2>
+          <p>Bekerja sama dengan relawan lokal, organisasi kecil, atau komunitas setempat membuat bantuan lebih tepat sasaran.</p>
+        </div>
+        <div class="card section" style="box-shadow:none">
+          <h2 style="font-size:18px;margin-bottom:8px">4) Evaluasi dan Perbaiki</h2>
+          <p>Setelah program berjalan, lakukan evaluasi singkat: apa yang berhasil, apa yang perlu disesuaikan untuk periode berikutnya.</p>
+        </div>
+      </div>
+
+      <blockquote>
+        Program yang baik bukan yang paling besar, tapi yang paling konsisten dan bisa dipertanggungjawabkan.
+      </blockquote>
+    </section>
+
+    <hr class="hr" />
+
+    <section id="referensi" class="card section">
+      <h2>Referensi</h2>
+     <ul class="links">
+  <li><a href="https://datahklotto.us/" target="_blank" rel="noopener">Data HK Lotto</a></li>
+  <li><a href="http://178.128.52.7/" target="_blank" rel="noopener">Data SDY Lotto</a></li>
+  <li><a href="https://pafiairseruk.org/" target="_blank" rel="noopener">Data HK</a></li>
+  <li><a href="http://178.128.89.94/" target="_blank" rel="noopener">Data SGP</a></li>
+  <li><a href="https://pafitanglad.org/" target="_blank" rel="noopener">Data SDY</a></li>
+  <li><a href="https://lamarsalaplayadegandia.com/" target="_blank" rel="noopener">Data HK</a></li>
+  <li><a href="http://159.223.35.146/" target="_blank" rel="noopener">Data SDY Lotto</a></li>
+  <li><a href="https://wholesalejerseys4sale.com/" target="_blank" rel="noopener">Prediksi Keluaran</a></li>
+  <li><a href="https://pafibenermeriahkabupaten.org/" target="_blank" rel="noopener">Prediksi Jitu</a></li>
+  <li><a href="http://178.128.116.128/" target="_blank" rel="noopener">Prediksi SDY</a></li>
+  <li><a href="https://prediksihkpools.net/" target="_blank" rel="noopener">Prediksi HK</a></li>
+  <li><a href="http://178.128.215.158/" target="_blank" rel="noopener">Angkanet</a></li>
+  <li><a href="http://178.128.21.45/" target="_blank" rel="noopener">Angkanet Result</a></li>
+  <li><a href="https://pafipcgunungkidulkab.org/" target="_blank" rel="noopener">Data HK 6D</a></li>
+</ul>
+    </section>
+
+  </main>
+
+  <footer>
+    © 2026 unitedforcharitableassistance.org — Notes & Public Resources
+  </footer>
+
+</body>
+</html>
